@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-link {
+    @apply flex items-center space-x-1 px-3 py-1 rounded-3xl text-white border-solid border-[1px]
+}
