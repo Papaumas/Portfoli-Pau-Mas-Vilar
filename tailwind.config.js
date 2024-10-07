@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'default-bg': '#ECEBF7',
+      },
+      fontFamily: {
+        noto: ['Noto Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
