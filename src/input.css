@@ -5,3 +5,11 @@
 .social-link {
     @apply flex items-center space-x-1 px-3 py-1 rounded-3xl text-white border-solid border-[1px]
 }
+
+.div-tecnologies div {
+    @apply flex flex-col items-center space-y-2
+}
+
+.div-tecnologies div img {
+    @apply max-w-[100px] max-h-[100px]
+}
