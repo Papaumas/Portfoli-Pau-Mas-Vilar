@@ -13,3 +13,7 @@
 .div-tecnologies div img {
     @apply max-w-[100px] max-h-[100px]
 }
+
+.links-nav a {
+    @apply text-gray-600 hover:text-gray-900
+}
