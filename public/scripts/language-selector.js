@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         flag.alt = `Bandera de ${selectedOption.dataset.langName}`;
         text.textContent = langData.language[langCode];
 
-        // Actualitza les opcions del desplegable (sin ocultar aquí)
+        // Actualitza les opcions del desplegable
         options.forEach(option => {
             const code = option.dataset.langCode;
             const span = option.querySelector("span");
@@ -33,11 +33,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Crida la funció de lang.js
         if (typeof changeLanguage === "function") {
             changeLanguage(langCode);
-        } else {
-            console.warn("No s'ha trobat la funció changeLanguage(langCode). Assegura't que lang.js està carregat.");
         }
 
-        // Oculta el dropdown usando style.display
         dropdown.style.display = "none";
     }
 
@@ -51,7 +48,16 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     });
 
-    button.addEventListener("click", toggleDropdown);
+    button.addEventListener("click", (event) => {
+        event.stopPropagation(); // Evita que el clic del botó es quedi obert al clicar algun lloc de la pàgina
+        toggleDropdown();
+    });
+
+    document.addEventListener("click", (event) => {
+        if (dropdown.style.display === "block" && !dropdown.contains(event.target) && event.target !== button) {
+            dropdown.style.display = "none";
+        }
+    });
 
     // Inicia amb l’idioma guardat
     setLanguage(savedLang);
