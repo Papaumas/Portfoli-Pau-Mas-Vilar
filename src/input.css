@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "flowbite/src/themes/default";
+
 
 .social-link {
-    @apply flex items-center space-x-1 px-3 py-1 rounded-3xl text-white border-solid border-[1px]
+    @apply flex items-center space-x-1 px-3 py-1 rounded-3xl text-white border-solid border-[1px] transition-colors
 }
 
 .div-tecnologies div {
@@ -15,5 +17,5 @@
 }
 
 .links-nav a {
-    @apply text-gray-600 hover:text-gray-900
+    @apply text-gray-600 hover:text-gray-900 p-1 transition-colors
 }

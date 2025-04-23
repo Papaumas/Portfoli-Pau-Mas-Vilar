@@ -1,0 +1,80 @@
+{
+  "language": {
+      "ca": "Catalán",
+      "es": "Castellano",
+      "en": "Inglés"
+  },
+  "nav": {
+      "inici": "Inicio",
+      "aboutMe": "Sobre mí",
+      "technologies": "Tecnologías",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "education": "Educación",
+      "contact": "Contacto"
+  },
+  "profile": {
+      "developer": "Desarrollador de aplicaciones web",
+      "work": "Disponible para trabajar",
+      "curriculum": "Currículum Vitae"
+  },
+  "aboutMe": {
+      "title": "Sobre mí",
+      "description": "Me llamo Pau Mas Vilar y tengo 22 años. Desde muy pequeño, me ha fascinado el mundo de la tecnología y la creatividad, una pasión que hoy en día se refleja en mi dedicación a la programación y el diseño de páginas web.\n\nDurante mis estudios, he tenido la oportunidad de desarrollar mis habilidades en programación y diseño, enfocándome principalmente en las tecnologías web. He tenido la oportunidad de trabajar con diversas tecnologías, principalmente Java, HTML, CSS, MySQL, PHP, JavaScript, Laravel, Bootstrap y Tailwind, entre otras. En particular, mi experiencia con PHP y Laravel me ha motivado a programar mis propias páginas web y a continuar ampliando mis conocimientos en el campo del desarrollo web.\n\nEn la actualidad, me dedico a desarrollar mis propios proyectos web, que me permiten aplicar mis conocimientos en programación y diseño. A la vez, estoy estudiando de forma autodidacta, ampliando mis conocimientos y habilidades."
+  },
+  "tecnologies": {
+      "title": "Tecnologías"
+  },
+  "experience": {
+      "title": "Experiencia",
+      "VideoService": {
+          "title": "Formación en Centros de Trabajo",
+          "duration": "Video Service - Enero 2017 - Junio 2017 (350h)",
+          "description": "Soporte en el servicio técnico ofrecido por la tienda.\nDesembalaje, montaje y reparación de aparatos electrónicos."
+      },
+      "Inducontrol": {
+          "title": "Formación Profesional Dual",
+          "duration": "Inducontrol - Enero 2023 - Julio 2023 (1000h)",
+          "description": "Diseño, mantenimiento y gestión de bases de datos.\nAtención técnica a los clientes y resolución de problemas.\nDesarrollo y programación de interfaces para aplicaciones de escritorio."
+      },
+      "Tarradellas": {
+          "title": "Operario de Producción",
+          "duration": "Casa Tarradellas - Enero - Marzo 2025",
+          "description": "Supervisión y control de las líneas de producción.\nRealización de controles de calidad rigurosos.\nManejo y operación de maquinaria de producción en línea."
+      }
+  },
+  "projects": {
+      "title": "Proyectos",
+      "AcademyLink": {
+          "title": "AcademyLink",
+          "description": "Plataforma de cursos online para gestionar cursos, temarios y tareas evaluables de manera organizada y accesible."
+      },
+      "code": "Código"
+  },
+  "education": {
+      "title": "Educación",
+      "SMX": {
+          "title": "Sistemas Microinformáticos y Redes",
+          "duration": "Institut Cirviànum - 2019 - 2021",
+          "description": "Especialización en la instalación, configuración y mantenimiento de sistemas informáticos y redes."
+      },
+      "DAW": {
+          "title": "Desarrollo de Aplicaciones Web",
+          "duration": "Institut Cirviànum - 2021 - 2024",
+          "description": "Diseño y desarrollo de aplicaciones web en frontend y backend.\nExperiencia en la creación y gestión de bases de datos."
+      }
+  },
+  "contact": {
+      "title": "Contacto",
+      "description": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través de:",
+      "phone": {
+          "title": "Teléfono:",
+          "number": "+34 609 62 47 86"
+      },
+      "email": {
+          "title": "Correo electrónico:",
+          "adress": "paumas123@gmail.com"
+      }
+  },
+  "rightsReserved": "2024 Pau Mas Vilar. Todos los derechos reservados."
+}

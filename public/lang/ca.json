@@ -1,0 +1,80 @@
+{
+    "language": {
+        "ca": "Català",
+        "es": "Castellà",
+        "en": "Anglès"
+    },
+    "nav": {
+        "inici": "Inici",
+        "aboutMe": "Sobre mi",
+        "technologies": "Tecnologies",
+        "experience": "Experiència",
+        "projects": "Projectes",
+        "education": "Educació",
+        "contact": "Contacte"
+    },
+    "profile": {
+        "developer": "Desenvolupador d'aplicacions web",
+        "work": "Disponible per treballar",
+        "curriculum": "Currículum Vitae"
+    },
+    "aboutMe": {
+        "title": "Sobre mi",
+        "description": "Em dic Pau Mas Vilar i tinc 22 anys. Des de ben petit, m’ha fascinat el món de la tecnologia i la creativitat, una passió que avui en dia es reflecteix en la meva dedicació a la programació i el disseny de pàgines web.\n\nDurant els meus estudis, he tingut l'oportunitat de desenvolupar les meves habilitats en programació i disseny, enfocant-me principalment en les tecnologies web. He tingut l'oportunitat de treballar amb diverses tecnologies, principalment Java, HTML, CSS, MySQL, PHP, JavaScript, Laravel, Bootstrap i Tailwind, entre d'altres. En particular, la meva experiència amb PHP i Laravel m'ha motivat a programar les meves pròpies pàgines web i a continuar ampliant els meus coneixements en el camp del desenvolupament web.\n\nEn l'actualitat, em dedico a desenvolupar els meus propis projectes web, que em permeten aplicar els meus coneixements en programació i disseny. Alhora, estic estudiant de forma autodidacta, ampliant els meus coneixements i habilitats."
+    },
+    "tecnologies": {
+        "title": "Tecnologies"
+    },
+    "experience": {
+        "title": "Experiència",
+        "VideoService": {
+            "title": "Formació en Centres de Treball",
+            "duration": "Video Service - Gener 2017 - Juny 2017 (350h)",
+            "description": "Suport en el servei tècnic ofert per la botiga.\nDesvellestament, muntatge i reparació d’aparells electrònics."
+        },
+        "Inducontrol": {
+            "title": "Formació Professional Dual",
+            "duration": "Inducontrol - Gener 2023 - Juliol 2023 (1000h)",
+            "description": "Disseny, manteniment i gestió de bases de dades.\nAtenció tècnica als clients i resolució de problemes.\nDesenvolupament i programació d'interfícies per a aplicacions d'escriptori."
+        },
+        "Tarradellas": {
+            "title": "Operari de Producció",
+            "duration": "Casa Tarradellas - Gener - Març 2025",
+            "description": "Supervisió i control de les línies de producció.\nRealització de controls de qualitat rigorosos.\nManeig i operació de maquinària de producció en línia."
+        }
+    },
+    "projects": {
+        "title": "Projectes",
+        "AcademyLink": {
+            "title": "AcademyLink",
+            "description": "Plataforma de cursos online per gestionar cursos, temaris i tasques avaluables de manera organitzada i accessible."
+        },
+        "code": "Codi"
+    },
+    "education": {
+        "title": "Educació",
+        "SMX": {
+            "title": "Sistemes Microinformàtics i Xarxes",
+            "duration": "Institut Cirviànum - 2019 - 2021",
+            "description": "Especialització en la instal·lació, configuració i manteniment de sistemes informàtics i xarxes."
+        },
+        "DAW": {
+            "title": "Desenvolupament d'Aplicacions Web",
+            "duration": "Institut Cirviànum - 2021 - 2024",
+            "description": "Disseny i desenvolupament d'aplicacions web en frontend i backend.\nExperiència en la creació i gestió de bases de dades."
+        }
+    },
+    "contact": {
+        "title": "Contacte",
+        "description": "Si desitges posar-te en contacte amb mi, pots fer-ho a través de:",
+        "phone": {
+            "title": "Telèfon:",
+            "number": "+34 609 62 47 86"
+        },
+        "email": {
+            "title": "Correu electrònic:",
+            "adress": "paumas123@gmail.com"
+        }
+    },
+    "rightsReserved": "2024 Pau Mas Vilar. Tots els drets reservats."
+}
