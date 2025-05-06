@@ -17,9 +17,51 @@
 
 <body class="bg-default-bg font-noto text-gray-800 min-h-screen">
     <!-- ? Proposta posar: shadow-md -->
+    <!-- <header class="fixed inset-x-0 top-0 z-30 mx-auto w-full bg-default-bg shadow-md">
+        <nav class="links-nav mx-auto p-3 flex justify-center items-center text-sm font-bold">
+          <div class="flex gap-x-10">
+                <a href="#home" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-home"></a>
+                <a href="#aboutMe" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-aboutMe"></a>
+                <a href="#technologies" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-technologies"></a>
+                <a href="#experience" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-experience"></a>
+                <a href="#projects" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-projects"></a>
+                <a href="#education" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-education"></a>
+                <a href="#contact" class="min-w-[100px] text-center font-bold text-sm text-gray-700 hover:text-blue-600" id="nav-contact"></a>
+            </div>
+            <div class="absolute right-0 pr-4">
+                <button id="language-button-header" data-dropdown-toggle="language-dropdown-header" class="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-full bg-white border border-gray-300 shadow-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" type="button">
+                    <img id="current-flag-header" src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full"/>
+                    <span  pan id="current-language-text-header"></span>
+                </button>
+                <div id="language-dropdown-header" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-40">
+                    <ul class="py-2 text-sm text-gray-600" aria-labelledby="language-button-header">
+                        <li>
+                            <button type="button" class="inline-flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" data-lang-code="ca" data-lang-name="Català" data-flag-src="img/flags/catalonia.png">
+                                <img src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full me-2">
+                                <span id="language-ca"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="inline-flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" data-lang-code="es" data-lang-name="Castellà" data-flag-src="img/flags/spain.png">
+                                <img src="img/flags/spain.png" alt="Bandera espanyola" class="h-5 w-5 rounded-full me-2">
+                                <span id="language-es"></span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="inline-flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" data-lang-code="en" data-lang-name="Anglès" data-flag-src="img/flags/usa.png">
+                                <img src="img/flags/usa.png" alt="Bandera americana" class="h-5 w-5 rounded-full me-2">
+                                <span id="language-en"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
     <header class="fixed inset-x-0 top-0 z-30 mx-auto w-full bg-default-bg shadow-md">
-        <nav class="links-nav container mx-auto p-3 flex justify-center items-center text-sm font-bold">
-            <div class="flex space-x-7">
+        <nav class="links-nav mx-auto p-3 flex justify-center items-center text-sm font-bold">
+            <div class="flex gap-x-7">
+                <a href="#home" id="nav-home"></a>
                 <a href="#aboutMe" id="nav-aboutMe"></a>
                 <a href="#technologies" id="nav-technologies"></a>
                 <a href="#experience" id="nav-experience"></a>
@@ -27,26 +69,19 @@
                 <a href="#education" id="nav-education"></a>
                 <a href="#contact" id="nav-contact"></a>
             </div>
-            <!-- <div class="absolute right-0 pr-4">
-                <select id="language-select" onchange="changeLanguage(this.value)" class="custom-select">
-                    <option id="language-ca" value="ca" data-image="img/flags/catalonia.png">Català</option>
-                    <option id="language-es" value="es" data-image="img/flags/spain.png">Castellà</option>
-                    <option id="language-en" value="en" data-image="img/flags/usa.png">Anglès</option>
-                </select>
-            </div> -->
             <div class="absolute right-0 pr-4">
                 <button id="language-button-header" data-dropdown-toggle="language-dropdown-header" class="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-full bg-white border border-gray-300 shadow-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" type="button">
-                <img id="current-flag-header" src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full"/>
-                <span id="current-language-text-header"></span>
-              </button>
+                    <img id="current-flag-header" src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full"/>
+                    <span  pan id="current-language-text-header"></span>
+                </button>
                 <div id="language-dropdown-header" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-40">
                     <ul class="py-2 text-sm text-gray-600" aria-labelledby="language-button-header">
                         <li>
                             <button type="button" class="inline-flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" data-lang-code="ca" data-lang-name="Català" data-flag-src="img/flags/catalonia.png">
-                              <img src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full me-2">
-                              <span id="language-ca"></span>
+                                <img src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full me-2">
+                                <span id="language-ca"></span>
                             </button>
-                          </li>
+                        </li>
                         <li>
                             <button type="button" class="inline-flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" data-lang-code="es" data-lang-name="Castellà" data-flag-src="img/flags/spain.png">
                                 <img src="img/flags/spain.png" alt="Bandera espanyola" class="h-5 w-5 rounded-full me-2">
@@ -67,16 +102,17 @@
 
 
 
-    <main class="container max-w-4xl mx-auto p-6">
+    <main class="container max-w-4xl mx-auto px-4 sm:px-6 py-6">
         <section id="inici" class="text-center py-16">
             <img src="img/profile.png" alt="Avatar" class="w-64 h-64 mx-auto rounded-full shadow-md object-cover">
             <h1 class="text-5xl font-bold mt-4">Pau Mas Vilar</h1>
             <p id="profile-developer"class="text-xl mt-2"></p>
+
             <div class="mt-5 border-solid border-[1px] rounded-3xl border-green-700 inline-block">
                 <p id="profile-work" class="text-[12px] bg-green-200 text-green-700 font-bold py-1.5 px-4 rounded-3xl"></p>
             </div>
 
-            <div class="mt-9 flex justify-center space-x-4 text-sm">
+            <div class="mt-9 flex flex-wrap justify-center gap-4 px-4">
                 <a href="https://www.linkedin.com/in/pau-mas-vilar-06435720b/" class="social-link bg-blue-500 hover:bg-blue-600 border-blue-600" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
                         <path d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 z M 15.5 13 A 2.5 2.5 0 0 0 15.5 18 A 2.5 2.5 0 0 0 15.5 13 z M 14 20 C 13.447 20 13 20.447 13 21 L 13 34 C 13 34.553 13.447 35 14 35 L 17 35 C 17.553 35 18 34.553 18 34 L 18 21 C 18 20.447 17.553 20 17 20 L 14 20 z M 21 20 C 20.447 20 20 20.447 20 21 L 20 34 C 20 34.553 20.447 35 21 35 L 24 35 C 24.553 35 25 34.553 25 34 L 25 26.5 C 25 25.121 26.121 24 27.5 24 C 28.879 24 30 25.121 30 26.5 L 30 34 C 30 34.553 30.447 35 31 35 L 34 35 C 34.553 35 35 34.553 35 34 L 35 26 C 35 22.691 32.309 20 29 20 C 27.462 20 26.063 20.586016 25 21.541016 L 25 21 C 25 20.447 24.553 20 24 20 L 21 20 z"></path>
@@ -93,8 +129,7 @@
 
                 <a href="files/Currículum - Pau Mas Vilar.pdf" class="social-link bg-yellow-500 hover:bg-yellow-600 border-yellow-600" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 6h8M8 10h8m-5 4h5M4 4v16c0 1.104.895 2 2 2h12c1.104 0 2-.896 2-2V8.414a2 2 0 00-.586-1.414L15.414 4A2 2 0 0014 3.586V4H6a2 2 0 00-2 2z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M8 10h8m-5 4h5M4 4v16c0 1.104.895 2 2 2h12c1.104 0 2-.896 2-2V8.414a2 2 0 00-.586-1.414L15.414 4A2 2 0 0014 3.586V4H6a2 2 0 00-2 2z" />
                     </svg>
                     <span>Currículum Vitae</span>
                 </a>
@@ -105,7 +140,7 @@
                     </svg>
                     <span>Email</span>
                 </a>
-            </div>
+            </div>            
         </section>      
 
         <section id="aboutMe" class="pt-16 space-y-8">
