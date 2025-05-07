@@ -13,7 +13,7 @@
 }
 
 .div-tecnologies div img {
-    @apply max-w-[100px] max-h-[100px]
+    @apply sm:max-w-[100px] sm:max-h-[100px] max-w-[75px] max-h-[75px]
 }
 
 .links-nav a {
