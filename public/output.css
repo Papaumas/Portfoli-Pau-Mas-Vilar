@@ -648,6 +648,16 @@ video {
   margin-right: auto;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .-ml-3 {
   margin-left: -0.75rem;
 }
@@ -686,6 +696,10 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .block {
@@ -1118,6 +1132,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1355,6 +1379,31 @@ html {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
