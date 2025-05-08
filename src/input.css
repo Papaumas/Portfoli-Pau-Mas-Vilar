@@ -19,3 +19,12 @@
 .links-nav a {
     @apply text-gray-600 hover:text-gray-900 p-1 transition-colors
 }
+
+.links-nav-dropdown button {
+    @apply text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors inline-flex items-center w-full px-4 py-2
+}
+
+/* Al clicar un link del navegador, aquest et portara a la secció sel·leccionada de forma fluida */
+html {
+    scroll-behavior: smooth;
+}

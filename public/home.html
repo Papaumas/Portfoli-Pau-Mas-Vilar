@@ -7,10 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link href="../src/input.css" rel="stylesheet"> -->
     <link href="output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/dropdownNav.js"></script>
+    <script src="scripts/navLinks.js"></script>
     <script src="scripts/lang.js"></script>
-    <script src="scripts/language-selector.js"></script>
+    <script src="scripts/languageSelector.js"></script>
     <!-- <script src="scripts/darkMode.js"></script> -->
     <title>Pau Mas Vilar</title>
 </head>
@@ -59,8 +61,13 @@
         </nav>
     </header> -->
     <header class="fixed inset-x-0 top-0 z-30 mx-auto w-full bg-default-bg shadow-md">
-        <nav class="links-nav mx-auto p-3 flex justify-center items-center text-sm font-bold">
-            <div class="flex gap-x-7">
+        <nav class="mx-auto p-3 h-[48px] flex justify-between mdPlus:justify-start lg:justify-center items-center text-sm font-bold relative">
+            <button id="dropdownNav-button" class="block mdPlus:hidden">
+                <svg class="h-6 w-6 fill-current text-gray-700" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18V6H3v2z"/>
+                </svg>
+            </button>
+            <div id="nav-links" class="links-nav hidden flex-col mdPlus:flex mdPlus:flex-row gap-y-4 mdPlus:gap-x-7">
                 <a href="#home" id="nav-home"></a>
                 <a href="#aboutMe" id="nav-aboutMe"></a>
                 <a href="#technologies" id="nav-technologies"></a>
@@ -69,10 +76,21 @@
                 <a href="#education" id="nav-education"></a>
                 <a href="#contact" id="nav-contact"></a>
             </div>
+            <div id="dropdownNav" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-40 absolute top-full left-0">
+                <ul class="links-nav-dropdown">
+                    <li><button data-href="#home" id="nav-home-mobile"></button></li>
+                    <li><button data-href="#aboutMe" id="nav-aboutMe-mobile"></button></li>
+                    <li><button data-href="#technologies" id="nav-technologies-mobile"></button></li>
+                    <li><button data-href="#experience" id="nav-experience-mobile"></button></li>
+                    <li><button data-href="#projects" id="nav-projects-mobile"></button></li>
+                    <li><button data-href="#education" id="nav-education-mobile"></button></li>
+                    <li><button data-href="#contact" id="nav-contact-mobile"></button></li>
+                </ul>
+            </div>
             <div class="absolute right-0 pr-4">
                 <button id="language-button-header" data-dropdown-toggle="language-dropdown-header" class="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-full bg-white border border-gray-300 shadow-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors" type="button">
                     <img id="current-flag-header" src="img/flags/catalonia.png" alt="Bandera catalana" class="h-5 w-5 rounded-full"/>
-                    <span  pan id="current-language-text-header"></span>
+                    <span id="current-language-text-header"></span>
                 </button>
                 <div id="language-dropdown-header" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-40">
                     <ul class="py-2 text-sm text-gray-600" aria-labelledby="language-button-header">
@@ -98,12 +116,10 @@
                 </div>
             </div>
         </nav>
-    </header> 
-
-
+    </header>
 
     <main class="container max-w-4xl mx-auto px-4 sm:px-6 py-6">
-        <section id="inici" class="text-center py-16">
+        <section id="home" class="text-center py-16">
             <img src="img/profile.png" alt="Avatar" class="w-64 h-64 mx-auto rounded-full shadow-md object-cover">
             <h1 class="text-5xl font-bold mt-4">Pau Mas Vilar</h1>
             <p id="profile-developer"class="text-xl mt-2"></p>
@@ -141,8 +157,8 @@
                     <span>Email</span>
                 </a>
             </div>            
-        </section>      
-
+        </section> 
+    
         <section id="aboutMe" class="pt-16 space-y-8">
             <div class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="2" stroke="black"

@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./public/**/*.{html,js}",
-    "./src/**/ *.{html, js}"
+    "./src/**/*.{html,js}"
   ],
   theme: {
     extend: {
@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         noto: ['Noto Sans', 'sans-serif'],
+      },
+      screens: {
+        'mdPlus': '845px',
       },
     },
   },
